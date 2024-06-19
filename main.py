@@ -16,13 +16,19 @@ if operation == '+':
   print("the solution to " + str(num1) + operation + str(num2) + " is " + str(solution))
 
 elif operation == '-':
-  subtract(num1,num2)
+  solution = subtract(num1,num2)
+  print("the solution to " + str(num1) + operation + str(num2) + " is " + str(solution))
+
 
 elif operation == '*':
-  multiply(num1,num2)
+  solution = multiply(num1,num2)
+  print("the solution to " + str(num1) + operation + str(num2) + " is " + str(solution))
+
 
 elif operation == '/':
-  division(num1,num2)
+  solution = division(num1,num2)
+  print("the solution to " + str(num1) + operation + str(num2) + " is " + str(solution))
+
   
 else: 
   print('You have not typed a valid operator, please try again')
