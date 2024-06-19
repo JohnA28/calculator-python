@@ -1,3 +1,5 @@
+from expressionlogic import *
+
 operation = input('''
             Please type in the operation you would like to complete.
             + for addition
@@ -7,23 +9,20 @@ operation = input('''
             ''')
 
 num1 = int(input('Enter the first number: '))
-num2 = int(input('Enter the first number: '))
+num2 = int(input('Enter the second number: '))
 
 if operation == '+':
-  def add (num1, num2):
-    return num1 + num2
+  solution = add(num1, num2)
+  print("the solution to " + str(num1) + operation + str(num2) + " is " + str(solution))
 
 elif operation == '-':
-  def subtract(num1, num2):
-    return num1 - num2
+  subtract(num1,num2)
 
 elif operation == '*':
-  def multiply(num1, num2):
-    return num1 * num2
+  multiply(num1,num2)
 
 elif operation == '/':
-  def division(num1, num2):
-    return num1/num2
+  division(num1,num2)
   
 else: 
   print('You have not typed a valid operator, please try again')
