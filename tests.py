@@ -1,4 +1,4 @@
-from main import *
+from expressionlogic import *
 
 
 assert add(2,2) == 4
